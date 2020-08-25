@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16097.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PlayIt_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.5" alignment="left" id="VOc-K9-nj7">
+                            <items>
+                                <button width="0.5" height="90" alignment="left" title="1" id="392-nq-aIe">
+                                    <color key="titleColor" red="0.3853417039" green="0.85346668960000005" blue="0.19608885049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="italicSystem" weight="heavy" pointSize="28"/>
+                                    <connections>
+                                        <action selector="playOne" destination="AgC-eL-Hgc" id="Wsf-AI-916"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="90" alignment="left" title="2" id="HCH-TC-gAz">
+                                    <color key="titleColor" red="0.3853417039" green="0.85346668960000005" blue="0.19608885049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="italicSystem" weight="heavy" pointSize="28"/>
+                                    <connections>
+                                        <action selector="playSecond" destination="AgC-eL-Hgc" id="ugE-9h-KbZ"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="2Zt-K6-FJj">
+                            <items>
+                                <button width="0.5" height="90" alignment="left" title="3" id="U8j-vf-2rC">
+                                    <color key="titleColor" red="0.3853417039" green="0.85346668960000005" blue="0.19608885049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="italicSystem" weight="heavy" pointSize="28"/>
+                                    <connections>
+                                        <action selector="playThird" destination="AgC-eL-Hgc" id="YGy-Sp-sxQ"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" height="90" alignment="left" title="4" id="iHB-Vt-Plm">
+                                    <color key="titleColor" red="0.3853417039" green="0.85346668960000005" blue="0.19608885049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="font" type="italicSystem" weight="heavy" pointSize="28"/>
+                                    <connections>
+                                        <action selector="playFourth" destination="AgC-eL-Hgc" id="f7E-KF-3lY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <segue destination="abp-uX-zgA" kind="relationship" relationship="nextPage" id="IDr-0N-0fJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="30.357142857142858"/>
+        </scene>
+        <!--Table Interface Controller-->
+        <scene sceneID="fuc-MN-Rbc">
+            <objects>
+                <controller id="abp-uX-zgA" customClass="TableInterfaceController" customModule="PlayIt_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="2tN-Kk-H60">
+                            <items>
+                                <tableRow identifier="Row" id="qvI-UC-P2O" customClass="SoundRow" customModule="PlayIt_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="45t-zG-EeY">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="hri-0G-Vev">
+                                                <color key="textColor" red="0.3853417039" green="0.85346668960000005" blue="0.19608885049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="musicLabel" destination="hri-0G-Vev" id="bzJ-iD-Tqc"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="2tN-Kk-H60" id="RS6-Gm-NdW"/>
+                        <segue destination="NPf-HO-hnv" kind="relationship" relationship="nextPage" id="aNW-4i-o7K"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="311" y="31"/>
+        </scene>
+        <!--Custom Interface Controller-->
+        <scene sceneID="jTK-F7-FUp">
+            <objects>
+                <controller id="NPf-HO-hnv" customClass="CustomInterfaceController" customModule="PlayIt_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.5" alignment="left" title="Record" id="zlu-KN-FSt">
+                            <color key="backgroundColor" red="0.75041640229999995" green="0.11913236990000001" blue="0.062226570080000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="recordBtn" destination="NPf-HO-hnv" id="KA4-yl-5b4"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" alignment="left" title="Play" id="6SG-Dp-Agz">
+                            <color key="backgroundColor" red="0.13127954789999999" green="0.79259200510000005" blue="0.4395961156" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="playButto" destination="NPf-HO-hnv" id="hKA-Se-hs9"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="playTapped" destination="6SG-Dp-Agz" id="all-cA-r5q"/>
+                        <outlet property="recordTapped" destination="zlu-KN-FSt" id="7jq-RP-l4b"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="606" y="31"/>
+        </scene>
+    </scenes>
+</document>
