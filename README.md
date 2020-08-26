@@ -49,4 +49,4 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Voice
 
 # Imortant Message 
 
-* This was my first project on watchOS , will try to make more advanced app later on .
+* This was my first project on watchOS , will try to make it more advanced app later on .
