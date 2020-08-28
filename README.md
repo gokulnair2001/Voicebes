@@ -10,7 +10,7 @@
 ![Badge](https://img.shields.io/badge/Voice-Player-orange)
 
 # Introduction ⚒ 
-Voicebes is an app used to record voice and to play various sorts of sounds. This is my first app on WatchOS.
+Voicebes is an app used to record voice and to play various sorts of sounds.
 
 # Steps to run 📲
 
