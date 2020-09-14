@@ -26,7 +26,7 @@ Voicebes is an app used to record voice and to play various sorts of sounds.
 * Press any sound you lke on second page to play the sound.
 * On the the third page press Record to start recording sound.
 * The press pause or play to continue or stop recording respectively.
-* Press play to play your last recorded voice.
+* Press play Button to play your last recorded voice.
 
 # Libraries Used In Project 📒 
 
