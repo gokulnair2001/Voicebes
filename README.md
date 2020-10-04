@@ -14,7 +14,7 @@ Voicebes is an app used to record voice and to play various sorts of sounds.
 
 # Steps to run 📲
 
-* Clone or download the app from this repository. 👩‍💻
+* Clone or download the App from this repository. 👩‍💻
 * Open project file in terminal. 💻
 * Change the bundle Identifier. ⚙️
 * Press Ctrl + R to run the app. 📲 
